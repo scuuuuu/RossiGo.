@@ -4,9 +4,9 @@ Progetto Java sviluppato per il sistema di sharing locale di monopattini e bici 
 
 ## Struttura del Progetto
 Il codice è organizzato in package con responsabilità ben distinte:
-- `modello`: Contiene la gerarchia dei veicoli (`Veicolo`, `Bici`, `Monopattino`), la classe `Utente`, `Noleggio` e l'enumerativo `Stato_veicolo`.
+- `modello`: Contiene la gerarchia dei veicoli (`Veicolo`, `Bici`, `Monopattino`), la classe `Utente`, `Noleggio` e l'enum `Stato_veicolo`.
 - `eccezioni`: Raccoglie la gerarchia delle eccezioni personalizzate (`RossiGoException` e le relative eccezioni specifiche).
-- `servizio`: Contiene `FlottaService` per la gestione della logica di business e delle operazioni polimorfe.
+- `servizio`: Contiene `FlottaService` per la gestione della logica
 - `persistenza`: Gestisce la connessione al database SQLite tramite il design pattern Singleton e l'uso sicuro di `PreparedStatement` e `try-with-resources`.
 - `app`: Contiene il punto di ingresso (`Main`) con la simulazione degli scenari e la stampa in ASCII art.
 
