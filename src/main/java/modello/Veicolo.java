@@ -17,8 +17,8 @@ public abstract class Veicolo {
         return batteria;
     }
 
-    public Stato_veicolo getStato() {
-        return stato;
+    public String getStato() {
+        return stato.toString();
     }
 
     public int getCodice() {

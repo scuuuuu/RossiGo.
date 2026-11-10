@@ -3,7 +3,7 @@ package modello;
 public class Monopattino extends Veicolo{
     private int velocitaMassima;
 
-    public Monopattino(String codice, int batteria, Stato_veicolo stato, int velocitaMassima) {
+    public Monopattino(int codice, int batteria, Stato_veicolo stato, int velocitaMassima) {
         super(codice, batteria, stato);
         this.velocitaMassima = velocitaMassima;
     }

@@ -4,7 +4,7 @@ import jdk.jfr.Percentage;
 
 public class Bici extends Veicolo{
     private int numeroMarce;
-    public Bici(String codice, int batteria, Stato_veicolo stato, int numeroMarce) {
+    public Bici(int codice, int batteria, Stato_veicolo stato, int numeroMarce) {
         super(codice, batteria, stato);
         this.numeroMarce = numeroMarce;
     }
