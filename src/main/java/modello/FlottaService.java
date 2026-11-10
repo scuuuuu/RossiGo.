@@ -27,7 +27,7 @@ public class FlottaService {
         utenti.put(utente.getId(), utente);
         database.insertUtente(utente.getId(),utente.getNome(),utente.getEmail(),utente.getCodiceFiscale(),utente.getCredito());
     }
-    public static void RegistraVeicolo(Veicolo v) throws SQLException {
+    public static void RegistraVeicolo(Veicolo v) throws RossiGoException,SQLException {
         if(veicoli.containsKey(v.getCodice())){
             throw new RossiGoException("Id gia presente");
         }
@@ -40,7 +40,7 @@ public class FlottaService {
             database.insertVeicolo(v.getCodice(), v.getBatteria(), v.getStato(), "monopattino");
         }
     }
-    public static void SbloccaVeicolo(int codice, int utente) throws SQLException {
+    public static void SbloccaVeicolo(int codice, int utente) throws RossiGoException,SQLException {
         if(!veicoli.containsKey(codice) || !veicoli.containsKey(utente)){
             throw new RossiGoException("Nessun veicolo trovato");
         }
