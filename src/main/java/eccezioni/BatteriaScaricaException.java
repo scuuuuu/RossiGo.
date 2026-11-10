@@ -1,4 +1,4 @@
-package org.example.eccezioni;
+package eccezioni;
 
 public class BatteriaScaricaException extends RossiGoException {
     private int livelloAttuale;

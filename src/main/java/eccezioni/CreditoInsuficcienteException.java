@@ -1,4 +1,4 @@
-package org.example.eccezioni;
+package eccezioni;
 
 public class CreditoInsuficcienteException extends RuntimeException {
     public CreditoInsuficcienteException(String message) {

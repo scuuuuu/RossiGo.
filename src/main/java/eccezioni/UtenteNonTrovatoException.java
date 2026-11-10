@@ -1,4 +1,4 @@
-package org.example.eccezioni;
+package eccezioni;
 
 public class UtenteNonTrovatoException extends RuntimeException {
     public UtenteNonTrovatoException(String message) {
